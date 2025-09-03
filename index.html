@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module Unlock</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #1a002d, #2b0045);
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .card-header h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .tag {
+      background: #00c853;
+      padding: 3px 10px;
+      border-radius: 8px;
+      font-size: 0.8em;
+    }
+
+    .tag.update {
+      background: #2979ff;
+    }
+
+    .category {
+      color: #b39ddb;
+      font-size: 0.9em;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 0.95em;
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+    .btn.install {
+      background: #9b5de5;
+      color: white;
+    }
+
+    .btn.install:hover {
+      background: #7a42b1;
+    }
+
+    .btn.link {
+      background: #222;
+      color: #ccc;
+      border: none;
+    }
+
+    .btn.link:hover {
+      background: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid">
+    <!-- Module 1 -->
+    <div class="card">
+      <div class="card-header">
+        <h3>All Star</h3>
+        <span class="tag">Mới</span>
+      </div>
+      <div class="category">Productivity</div>
+      <div class="description">Mở khóa tính năng premium All Star</div>
+      <div class="buttons">
+        <a href="https://example.com/allstar" class="btn install" target="_blank">Cài đặt Module</a>
+        <button class="btn link" onclick="copyLink('https://example.com/allstar')">Sao chép Link</button>
+      </div>
+    </div>
+
+    <!-- Module 2 -->
+    <div class="card">
+      <div class="card-header">
+        <h3>VSCO Premium</h3>
+        <span class="tag">Mới</span>
+      </div>
+      <div class="category">Photo & Video</div>
+      <div class="description">Mở khóa VSCO Premium với tất cả filter và tính năng</div>
+      <div class="buttons">
+        <a href="https://example.com/vsco" class="btn install" target="_blank">Cài đặt Module</a>
+        <button class="btn link" onclick="copyLink('https://example.com/vsco')">Sao chép Link</button>
+      </div>
+    </div>
+
+    <!-- Module 3 -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Vivacut</h3>
+        <span class="tag">Mới</span>
+      </div>
+      <div class="category">Photo & Video</div>
+      <div class="description">Mở khóa Vivacut Premium cho chỉnh sửa video</div>
+      <div class="buttons">
+        <a href="https://example.com/vivacut" class="btn install" target="_blank">Cài đặt Module</a>
+        <button class="btn link" onclick="copyLink('https://example.com/vivacut')">Sao chép Link</button>
+      </div>
+    </div>
+
+    <!-- Module 4 -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Picsart Premium</h3>
+        <span class="tag">Mới</span>
+      </div>
+      <div class="category">Photo & Video</div>
+      <div class="description">Mở khóa Picsart Premium với tất cả tools và templates</div>
+      <div class="buttons">
+        <a href="https://example.com/picsart" class="btn install" target="_blank">Cài đặt Module</a>
+        <button class="btn link" onclick="copyLink('https://example.com/picsart')">Sao chép Link</button>
+      </div>
+    </div>
+
+    <!-- Module 5 -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Alight Motion</h3>
+        <span class="tag">Mới</span>
+      </div>
+      <div class="category">Photo & Video</div>
+      <div class="description">Mở khóa Alight Motion Premium cho animation và VFX</div>
+      <div class="buttons">
+        <a href="https://example.com/alightmotion" class="btn install" target="_blank">Cài đặt Module</a>
+        <button class="btn link" onclick="copyLink('https://example.com/alightmotion')">Sao chép Link</button>
+      </div>
+    </div>
+
+    <!-- Module 6 -->
+    <div class="card">
+      <div class="card-header">
+        <h3>SoundCloud Plus</h3>
+        <span class="tag">Mới</span>
+      </div>
+      <div class="category">Music Streaming</div>
+      <div class="description">Mở khóa SoundCloud Plus với tất cả tính năng premium</div>
+      <div class="buttons">
+        <a href="https://example.com/soundcloud" class="btn install" target="_blank">Cài đặt Module</a>
+        <button class="btn link" onclick="copyLink('https://example.com/soundcloud')">Sao chép Link</button>
+      </div>
+    </div>
+
+    <!-- Module 7 -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Bilibili No ADS</h3>
+        <span class="tag">Mới</span>
+      </div>
+      <div class="category">Video Streaming</div>
+      <div class="description">Chặn quảng cáo Bilibili và mở khóa tính năng premium</div>
+      <div class="buttons">
+        <a href="https://example.com/bilibili" class="btn install" target="_blank">Cài đặt Module</a>
+        <button class="btn link" onclick="copyLink('https://example.com/bilibili')">Sao chép Link</button>
+      </div>
+    </div>
+
+    <!-- Module 8 -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Spotify Plus</h3>
+        <span class="tag update">Cập nhật</span>
+      </div>
+      <div class="category">Music Streaming</div>
+      <div class="description">Mở khóa Spotify Premium với tất cả tính năng và chặn quảng cáo</div>
+      <div class="buttons">
+        <a href="https://example.com/spotify" class="btn install" target="_blank">Cài đặt Module</a>
+        <button class="btn link" onclick="copyLink('https://example.com/spotify')">Sao chép Link</button>
+      </div>
+    </div>
+
+    <!-- Module 9 -->
+    <div class="card">
+      <div class="card-header">
+        <h3>CapCut Premium</h3>
+        <span class="tag">Mới</span>
+      </div>
+      <div class="category">Photo & Video</div>
+      <div class="description">Mở khóa CapCut Premium không watermark</div>
+      <div class="buttons">
+        <a href="https://example.com/capcut" class="btn install" target="_blank">Cài đặt Module</a>
+        <button class="btn link" onclick="copyLink('https://example.com/capcut')">Sao chép Link</button>
+      </div>
+    </div>
+
+    <!-- Module 10 -->
+    <div class="card">
+      <div class="card-header">
+        <h3>Canva Pro</h3>
+        <span class="tag">Mới</span>
+      </div>
+      <div class="category">Design</div>
+      <div class="description">Mở khóa Canva Pro với tất cả template và stock</div>
+      <div class="buttons">
+        <a href="https://example.com/canva" class="btn install" target="_blank">Cài đặt Module</a>
+        <button class="btn link" onclick="copyLink('https://example.com/canva')">Sao chép Link</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function copyLink(url) {
+      navigator.clipboard.writeText(url).then(() => {
+        alert("Đã sao chép link: " + url);
+      });
+    }
+  </script>
+
+</body>
+</html>
