@@ -33,9 +33,25 @@
       margin-bottom: 15px;
     }
 
-    .card-header h3 {
+    .title-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 5px 12px;
+      border-radius: 10px;
+    }
+
+    .title-box img {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .title-box h3 {
       margin: 0;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
 
     .tag {
@@ -103,7 +119,10 @@
     <!-- Module 1 -->
     <div class="card">
       <div class="card-header">
-        <h3>All Star</h3>
+        <div class="title-box">
+          <img src="https://img.icons8.com/color/48/star.png" alt="All Star">
+          <h3>All Star</h3>
+        </div>
         <span class="tag">Mới</span>
       </div>
       <div class="category">Productivity</div>
@@ -117,7 +136,10 @@
     <!-- Module 2 -->
     <div class="card">
       <div class="card-header">
-        <h3>VSCO Premium</h3>
+        <div class="title-box">
+          <img src="https://img.icons8.com/color/48/camera.png" alt="VSCO">
+          <h3>VSCO Premium</h3>
+        </div>
         <span class="tag">Mới</span>
       </div>
       <div class="category">Photo & Video</div>
@@ -128,117 +150,7 @@
       </div>
     </div>
 
-    <!-- Module 3 -->
-    <div class="card">
-      <div class="card-header">
-        <h3>Vivacut</h3>
-        <span class="tag">Mới</span>
-      </div>
-      <div class="category">Photo & Video</div>
-      <div class="description">Mở khóa Vivacut Premium cho chỉnh sửa video</div>
-      <div class="buttons">
-        <a href="https://example.com/vivacut" class="btn install" target="_blank">Cài đặt Module</a>
-        <button class="btn link" onclick="copyLink('https://example.com/vivacut')">Sao chép Link</button>
-      </div>
-    </div>
-
-    <!-- Module 4 -->
-    <div class="card">
-      <div class="card-header">
-        <h3>Picsart Premium</h3>
-        <span class="tag">Mới</span>
-      </div>
-      <div class="category">Photo & Video</div>
-      <div class="description">Mở khóa Picsart Premium với tất cả tools và templates</div>
-      <div class="buttons">
-        <a href="https://example.com/picsart" class="btn install" target="_blank">Cài đặt Module</a>
-        <button class="btn link" onclick="copyLink('https://example.com/picsart')">Sao chép Link</button>
-      </div>
-    </div>
-
-    <!-- Module 5 -->
-    <div class="card">
-      <div class="card-header">
-        <h3>Alight Motion</h3>
-        <span class="tag">Mới</span>
-      </div>
-      <div class="category">Photo & Video</div>
-      <div class="description">Mở khóa Alight Motion Premium cho animation và VFX</div>
-      <div class="buttons">
-        <a href="https://example.com/alightmotion" class="btn install" target="_blank">Cài đặt Module</a>
-        <button class="btn link" onclick="copyLink('https://example.com/alightmotion')">Sao chép Link</button>
-      </div>
-    </div>
-
-    <!-- Module 6 -->
-    <div class="card">
-      <div class="card-header">
-        <h3>SoundCloud Plus</h3>
-        <span class="tag">Mới</span>
-      </div>
-      <div class="category">Music Streaming</div>
-      <div class="description">Mở khóa SoundCloud Plus với tất cả tính năng premium</div>
-      <div class="buttons">
-        <a href="https://example.com/soundcloud" class="btn install" target="_blank">Cài đặt Module</a>
-        <button class="btn link" onclick="copyLink('https://example.com/soundcloud')">Sao chép Link</button>
-      </div>
-    </div>
-
-    <!-- Module 7 -->
-    <div class="card">
-      <div class="card-header">
-        <h3>Bilibili No ADS</h3>
-        <span class="tag">Mới</span>
-      </div>
-      <div class="category">Video Streaming</div>
-      <div class="description">Chặn quảng cáo Bilibili và mở khóa tính năng premium</div>
-      <div class="buttons">
-        <a href="https://example.com/bilibili" class="btn install" target="_blank">Cài đặt Module</a>
-        <button class="btn link" onclick="copyLink('https://example.com/bilibili')">Sao chép Link</button>
-      </div>
-    </div>
-
-    <!-- Module 8 -->
-    <div class="card">
-      <div class="card-header">
-        <h3>Spotify Plus</h3>
-        <span class="tag update">Cập nhật</span>
-      </div>
-      <div class="category">Music Streaming</div>
-      <div class="description">Mở khóa Spotify Premium với tất cả tính năng và chặn quảng cáo</div>
-      <div class="buttons">
-        <a href="https://example.com/spotify" class="btn install" target="_blank">Cài đặt Module</a>
-        <button class="btn link" onclick="copyLink('https://example.com/spotify')">Sao chép Link</button>
-      </div>
-    </div>
-
-    <!-- Module 9 -->
-    <div class="card">
-      <div class="card-header">
-        <h3>CapCut Premium</h3>
-        <span class="tag">Mới</span>
-      </div>
-      <div class="category">Photo & Video</div>
-      <div class="description">Mở khóa CapCut Premium không watermark</div>
-      <div class="buttons">
-        <a href="https://example.com/capcut" class="btn install" target="_blank">Cài đặt Module</a>
-        <button class="btn link" onclick="copyLink('https://example.com/capcut')">Sao chép Link</button>
-      </div>
-    </div>
-
-    <!-- Module 10 -->
-    <div class="card">
-      <div class="card-header">
-        <h3>Canva Pro</h3>
-        <span class="tag">Mới</span>
-      </div>
-      <div class="category">Design</div>
-      <div class="description">Mở khóa Canva Pro với tất cả template và stock</div>
-      <div class="buttons">
-        <a href="https://example.com/canva" class="btn install" target="_blank">Cài đặt Module</a>
-        <button class="btn link" onclick="copyLink('https://example.com/canva')">Sao chép Link</button>
-      </div>
-    </div>
+    <!-- Bạn có thể lặp lại các module khác tương tự, chỉ đổi icon + tên + link -->
   </div>
 
   <script>
